@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--title-->
+    <title>Investment Prediction</title>
+
+    <!--css link-->>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css') }}">
+</head>
+
+<body>
+
+<img class="img" src="{{url_for('static',filename='css/img2.png') }}" alt="img">
+    
+    <div class = padding>
+        <form class="form" action="/predict" method='POST'>
+
+            <div class="stock">
+                <label for="stock">Ticker Name:</label>
+                <input type="str" id="stock" name="stock">
+            </div>
+
+            <div class="predict">
+                <input type="submit" value="predict">
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+<h3>{{ prediction_text }}</h3>
+
+<p>©2021 Siddharth</p>
+    
+</body>
+
+</html>

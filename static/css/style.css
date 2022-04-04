@@ -1,0 +1,28 @@
+.padding {
+  padding-top: 10px;
+  padding-left: 500px;
+  padding-bottom: 10px;
+  background-color: whitesmoke ;
+}
+
+.predict {
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-bottom: 10px;
+  background-color: whitesmoke ;
+}
+
+.img {
+  padding-top: 10px;
+  padding-left: 400px;
+}
+
+h3 {
+  padding-left: 500px;
+}
+
+p {
+  padding-left: 600px;
+  padding-top: 200px;
+  padding-bottom: 10px;
+}
