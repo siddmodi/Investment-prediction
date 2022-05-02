@@ -26,6 +26,7 @@ def home():
 def predict():
   l1 = []
   stock = str(request.form['stock'])
+  stock = stock.upper()
   stock1 = stock.upper()+'.NS'
   l1.append(stock1)
 
@@ -103,7 +104,7 @@ def predict():
     elif prediction == 1:
       output = "I recommend you to buy {} stock".format(stock)
 
-    return render_template('home.html',prediction_text=f"{output}")
+    return render_template('home.html',symbol=stock,prediction_text=f"{output}")
 
 if __name__ == "__main__":
     app.run(debug=True)
